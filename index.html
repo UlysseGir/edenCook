@@ -5,15 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Open+Sans&display=swap" rel="stylesheet">  
+
     <title>edenCook</title>
 </head>
 <body>
     <header>
+        <a href="#" id="logo"><img src="img/logo.png" alt="logo"></a>
         <nav>
             <ul>
-                <li><a href="#"><img src="img/logo.png" alt="logo"></a></li>
-                <li><img src="img/shop.png" alt="shop"></li>
-                <li><img src="img/menu.png" alt="menu"></li>
+                <li><a href="#"><img src="img/shop.png" alt="shop"></a></li>
+                <li><img id="menuBurger" src="img/menu.png" alt="menu"></li>
+            </ul>
+        </nav>
+        <nav id="menu">
+            <ul class="menu-item">
                 <li><a href="#">recipe</a></li>
                 <li><a href="#">blog</a></li>
                 <li><a href="#">contacts</a></li>
@@ -23,37 +32,47 @@
     <main>
         <div id="recipes">
             <article class="recipe">
-                <img src="https://picsum.photos/seed/picsum/300/200" alt="">
-                <h2>Title recipe</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et doloribus quam pariatur voluptatum maiores harum mollitia culpa voluptate minus vel, laudantium tempora! Distinctio tenetur debitis nisi facere soluta suscipit modi?</p>
+                <div>
+                    <img src="https://picsum.photos/seed/picsum/300/200" alt="">
+                    <h2>Title recipe</h2>
+                </div>
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et doloribus quam pariatur voluptatum maiores harum mollitia culpa voluptate minus vel, laudantium tempora! Distinctio tenetur debitis nisi facere soluta suscipit modi?</p>
+                    <button class="ingredientBtn">ingredients >></button>
+                </div>
             </article>
             <div class="ingredients">
                 <div class="unite">
-                    <h3>NAME ingred</h3>
+                    <h3>NAME</h3>
                     <img src="https://picsum.photos/seed/picsum/100/100" alt="">
                     <p>999g</p>
                 </div>
                 <div class="unite">
-                    <h3>NAME ingred</h3>
+                    <h3>NAME</h3>
                     <img src="https://picsum.photos/seed/picsum/100/100" alt="">
                     <p>999g</p>
                 </div>
             </div>
             <article class="recipe">
-                <img src="https://picsum.photos/seed/picsum/300/200" alt="">
-                <h2>Title recipe</h2>
+                <div>
+                    <img src="https://picsum.photos/seed/picsum/300/200" alt="">
+                    <h2>Title recipe</h2>
+                </div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et doloribus quam pariatur voluptatum maiores harum mollitia culpa voluptate minus vel, laudantium tempora! Distinctio tenetur debitis nisi facere soluta suscipit modi?</p>
             </article>
         </div>
         <div id="blog">
             <button>Left</button>
             <article>
-                <img src="https://picsum.photos/seed/picsum/200/300" alt="">
-                <h2>Title blog</h2>
+                <div>
+                    <img src="https://picsum.photos/seed/picsum/200/300" alt="">
+                    <h2>Title blog</h2>
+                </div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et doloribus quam pariatur voluptatum maiores harum mollitia culpa voluptate minus vel, laudantium tempora! Distinctio tenetur debitis nisi facere soluta suscipit modi?</p>
             </article>
             <button>Right</button>
         </div>
     </main>
+    <script src="js/app.js"></script>
 </body>
 </html>

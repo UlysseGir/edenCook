@@ -1,0 +1,101 @@
+html{font-size: 62.5%;}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    margin: 10px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: end;
+    list-style: none;
+}
+
+.menu-item {
+    display: none;
+}
+
+.close{
+    display: flex;
+    justify-content: end;
+    list-style: none;
+}
+
+.open{
+    display: flex;
+}
+
+#logo img{
+    float: left;
+    width: 50px;
+}
+
+nav ul li img {
+    width: 50px;
+}
+
+.recipe {
+    background: rgb(247,247,247);
+    background: linear-gradient(180deg, rgba(247,247,247,1) 80%, rgba(196,236,245,0) 100%);
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+}
+
+.recipe:hover {
+    box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.3);
+    background: rgb(247,247,247);
+    transition-duration: 0.5s;
+}
+
+.recipe:hover button{
+    display: block;
+}
+
+.recipe button{
+    display: none;
+    float: right;
+    margin-right: 30px;
+    padding: 10px;
+    background: rgb(255,239,0);
+    background: linear-gradient(180deg, rgba(255,239,0,1) 0%, rgba(255,174,33,1) 100%); 
+    border: none;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+
+.recipe p {
+    margin: 20px;
+}
+
+.recipe h2 {
+    font-family: 'Nunito Sans', sans-serif;
+    margin-left: 10px;
+}
+
+.recipe img {
+    width: 200px;
+    border-radius: 5px 0 15px 0;
+}
+
+.ingredients{
+    display: none;
+    text-align: center;
+}
+
+.ingredients img{
+    border-radius: 20px;
+}
+
+.ingredOpen{
+    display: flex;
+}
+
+.unite {
+    margin: 5px;
+    background: rgb(247,247,247);
+    background: linear-gradient(180deg, rgba(247,247,247,0) 0%, rgba(247,247,247,1) 20%, rgba(247,247,247,1) 80%, rgba(247,247,247,0) 100%); 
+}
